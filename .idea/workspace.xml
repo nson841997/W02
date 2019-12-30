@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b5ff23-5b79-4e90-aeac-369ebde4a6ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/addCategoryProduct.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/allCategoryProduct.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_30_133024_create_tbl_admin_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_30_133024_create_tbl_admin_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,6 +139,9 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -155,7 +154,7 @@
       <updated>1577688772382</updated>
       <workItem from="1577688779602" duration="6356000" />
       <workItem from="1577695175037" duration="5531000" />
-      <workItem from="1577711820547" duration="5103000" />
+      <workItem from="1577711820547" duration="8104000" />
     </task>
     <servers />
   </component>
