@@ -27,6 +27,14 @@
                 </div>
             </div>
             <div class="table-responsive">
+                <?php
+                $message = Session::get('message');
+                if ($message)
+                {
+                    echo '<div  class="alert alert-success">'.$message .'</div>';
+                    Session::put('message', null);
+                }
+                ?>
                 <table class="table table-striped b-t b-light">
                     <thead>
                     <tr>
@@ -37,20 +45,41 @@
                         </th>
                         <th>Tên danh mục</th>
                         <th>Hiển thị</th>
-                        <th>Ngày thêm</th>
+
                         <th style="width:30px;"></th>
                     </tr>
                     </thead>
                     <tbody>
+                    @foreach($all_category_prd as $key=>$cat_prd)
+
                     <tr>
                         <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-                        <td>Idrawfast prototype design prototype design prototype design prototype design prototype design</td>
-                        <td><span class="text-ellipsis">Ẩn/Hiện</span></td>
-                        <td><span class="text-ellipsis">30/12/2019</span></td>
+                        <td>{{$cat_prd->category_name}}</td>
+                        <td><span class="text-ellipsis">
+                                <?php
+                                if($cat_prd->category_status == 0)
+                                    {
+                                        ?>
+                                    <a href="{{'/unactive_category_product/'.$cat_prd->category_id}}"><span class="fa-thumb-styling-down fa fa-thumbs-down"> </span></a>
+
+                                    <?php
+                                        }else
+                                    {
+                                    ?>
+
+                                    <a href="{{'/active_category_product/'.$cat_prd->category_id}}"><span class="fa-thumb-styling-up fa fa-thumbs-up"> </span></a>
+                                    <?php
+                                    }
+                                ?>
+
+                            </span></td>
+
                         <td>
                             <a href="" class="active" ui-toggle-class=""><i class="fa fa-pencil-square-o text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
                         </td>
                     </tr>
+
+                        @endforeach
                     </tbody>
                 </table>
             </div>
