@@ -55,7 +55,8 @@
                     <tr>
                         <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
                         <td>{{$cat_prd->category_name}}</td>
-                        <td><span class="text-ellipsis">
+                        <td>
+                            <span class="text-ellipsis">
                                 <?php
                                 if($cat_prd->category_status == 0)
                                     {
@@ -65,20 +66,23 @@
                                     <?php
                                         }else
                                     {
-                                    ?>
 
+                                    ?>
                                     <a href="{{'/active_category_product/'.$cat_prd->category_id}}"><span class="fa-thumb-styling-up fa fa-thumbs-up"> </span></a>
                                     <?php
                                     }
                                 ?>
-
-                            </span></td>
-
+                            </span>
+                        </td>
                         <td>
-                            <a href="" class="active" ui-toggle-class=""><i class="fa fa-pencil-square-o text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
+                            <a href="{{'/edit-category-product/'.$cat_prd->category_id}}" class="active styling-edit" ui-toggle-class="">
+                                <i class="fa fa-pencil-square-o text-success text-active"></i>
+                            </a>
+                            <a href="{{'/delete-category-product/'.$cat_prd->category_id}}" onclick="return confirm('Bạn có chắc chắn xóa?')" class="active styling-delete" ui-toggle-class="">
+                                <i class="fa fa-times text-danger text"></i>
+                            </a>
                         </td>
                     </tr>
-
                         @endforeach
                     </tbody>
                 </table>

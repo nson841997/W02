@@ -61,16 +61,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <img alt="" src="images/2.png">
                         <span class="username">
                             @php
-
                                 $name = Session::get('admin_name');
                                 if ($name)
                                  {
                                        echo $name;
-
                                    }
-
                             @endphp
-
                         </span>
                         <b class="caret"></b>
                     </a>
@@ -110,20 +106,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li><a href="{{'/all-category-product'}}">Danh mục sản phẩm</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="fontawesome.html">
-                            <i class="fa fa-bullhorn"></i>
-                            <span>Font awesome </span>
-                        </a>
-                    </li>
+
                     <li class="sub-menu">
                         <a href="javascript:;">
                             <i class="fa fa-th"></i>
-                            <span>Data Tables</span>
+                            <span>Thương Hiệu Sản Phẩm</span>
                         </a>
                         <ul class="sub">
-                            <li><a href="basic_table.html">Basic Table</a></li>
-                            <li><a href="responsive_table.html">Responsive Table</a></li>
+                            <li><a href="{{'/add-brand-product'}}">Thêm thương hiệu sản phẩm</a></li>
+                            <li><a href="{{'/all-brand-product'}}">Danh mục thương hiệu</a></li>
                         </ul>
                     </li>
                     <li class="sub-menu">

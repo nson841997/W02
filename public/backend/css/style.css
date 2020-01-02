@@ -56,6 +56,12 @@ body a:hover{
     -o-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out;
 }
+.styling-edit {
+    font-size: 20px;
+}
+.styling-delete {
+    font-size: 20px;
+}
 #sidebar ul li {
     position: relative;
 }
