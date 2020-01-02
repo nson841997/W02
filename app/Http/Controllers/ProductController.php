@@ -9,7 +9,7 @@ use Session;
 use Illuminate\Support\Facades\Redirect;
 session_start();
 
-class BrandproductController extends Controller
+class ProductController extends Controller
 {
     public function  add_brand_product()
     {

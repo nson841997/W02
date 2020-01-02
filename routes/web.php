@@ -41,7 +41,7 @@ Route::post('/update-category-product/{category_product_id}', 'CategoryProduct@u
 Route::get('/add-brand-product', 'BrandproductController@add_brand_product');
 Route::get('/edit-brand-product/{brand_product_id}', 'BrandproductController@edit_brand_product');
 Route::get('/delete-brand-product/{brand_product_id}', 'BrandproductController@delete_brand_product');
-Route::get('/all-brand-product', 'BrandproductController@all_category_product');
+Route::get('/all-brand-product', 'BrandproductController@all_brand_product');
 
 Route::get('/active_brand_product/{brand_product_id}', 'BrandproductController@active_brand_product');
 Route::get('/unactive_brand_product/{brand_product_id}', 'BrandproductController@unactive_brand_product');
